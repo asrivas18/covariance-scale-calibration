@@ -1,0 +1,22 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+Thumbs.db
+
+*.Rout
+*.log
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+results/*.RData
+results/*.Rhistory
+
+# Keep explicit final result files, not temporary files.
+results/tmp/
+tables/tmp/
