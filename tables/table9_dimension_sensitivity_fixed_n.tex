@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Panel A: dimension-to-sample-size sensitivity with fixed $n=100$ and varying $p$. Trace bias is reported on the covariance-trace scale; covariance and precision errors are relative Frobenius-norm errors. For every row, the deterministic trace ratio is $\operatorname{tr}(\mathbf{S}_Y)/\operatorname{tr}(\mathbf{S}_X)=100/99=1.01010$. Precision-error comparisons are specific to the fixed ridge-shrinkage parameter $\alpha=0.10$ and should not be interpreted as a universal precision-estimation result.}
+\label{tab:pn_sensitivity_fixed_n}
+\begin{tabular}{rrrlrrr}
+\hline\hline
+\textbf{$n$} & \textbf{$p$} & \textbf{$p/n$} & \textbf{Metric} & \textbf{$X$} & \textbf{$Y$} & \textbf{$Y-X$} \\
+\hline
+100 & 25 & 0.25 & Trace bias & -0.235 (0.035) & 0.015 (0.036) & 0.250 (0.000) \\
+ &  &  & Covariance error & 0.2956 (0.0010) & 0.2962 (0.0010) & 0.0007 (0.0001) \\
+ &  &  & Precision error & 0.3262 (0.0005) & 0.3275 (0.0005) & 0.0013 (0.0000) \\
+\hline
+100 & 50 & 0.50 & Trace bias & -0.529 (0.053) & -0.029 (0.054) & 0.500 (0.001) \\
+ &  &  & Covariance error & 0.3954 (0.0007) & 0.3976 (0.0007) & 0.0022 (0.0000) \\
+ &  &  & Precision error & 0.4646 (0.0006) & 0.4605 (0.0006) & -0.0041 (0.0000) \\
+\hline
+100 & 100 & 1.00 & Trace bias & -0.919 (0.075) & 0.082 (0.076) & 1.001 (0.001) \\
+ &  &  & Covariance error & 0.5427 (0.0006) & 0.5469 (0.0006) & 0.0042 (0.0000) \\
+ &  &  & Precision error & 0.8349 (0.0009) & 0.8235 (0.0009) & -0.0114 (0.0000) \\
+\hline
+100 & 200 & 2.00 & Trace bias & -2.172 (0.108) & -0.173 (0.109) & 1.998 (0.001) \\
+ &  &  & Covariance error & 0.7531 (0.0005) & 0.7597 (0.0005) & 0.0067 (0.0000) \\
+ &  &  & Precision error & 1.3879 (0.0011) & 1.3687 (0.0011) & -0.0192 (0.0000) \\
+\hline
+100 & 500 & 5.00 & Trace bias & -5.093 (0.171) & -0.093 (0.172) & 4.999 (0.002) \\
+ &  &  & Covariance error & 1.1796 (0.0004) & 1.1909 (0.0004) & 0.0113 (0.0000) \\
+ &  &  & Precision error & 1.8207 (0.0009) & 1.7960 (0.0009) & -0.0247 (0.0000) \\
+\hline\hline
+\end{tabular}
+\end{table}
+

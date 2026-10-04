@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Numerical verification of exact analytical post-hoc rescaling relations over $M=100$ independent Monte Carlo replications. Entries report maximum absolute discrepancies. The checks use matched stochastic inputs and the stated matching conditions.}
+\label{tab:posthoc_benchmarks}
+\begin{tabular}{p{3.7cm}p{4.6cm}c}
+\hline\hline
+\textbf{Quantity} & \textbf{Analytical relation} & \textbf{Maximum discrepancy} \\
+\hline
+Denominator-$n$ covariance & $\mathbf{S}_{Y,\mathrm{emp}}=\frac{n}{n-1}\mathbf{S}_{X,\mathrm{emp}}$ & $1.33\times 10^{-15}$ \\
+Matched PCA eigenvalues & $\lambda_j(\mathbf{S}_Y)=\frac{n}{n-1}\lambda_j(\mathbf{S}_X)$ & $2.66\times 10^{-15}$ \\
+Matched PCA bootstrap draws & $\lambda_{j,Y}^{*(b)}=\frac{n}{n-1}\lambda_{j,X}^{*(b)}$ & $6.22\times 10^{-15}$ \\
+Matched PCA percentile endpoints & $q_{\alpha,Y}=\frac{n}{n-1}q_{\alpha,X}$ & $3.55\times 10^{-15}$ \\
+Matched $K$-NN neighbor ordering & identical distance ordering under matched scaling & $0$ \\
+Matched $K$-means assignments & identical assignments under stated matching & $0$ \\
+Matched $K$-means centroid deviations & $\widehat{\boldsymbol{\mu}}_Y-\bar{\mathbf{Y}}=\sqrt{\frac{n}{n-1}}(\widehat{\boldsymbol{\mu}}_X-\bar{\mathbf{X}})$ & $8.88\times 10^{-16}$ \\
+Matched $K$-means centroid variance & $V_Y=\frac{n}{n-1}V_X$ & $2.78\times 10^{-17}$ \\
+\hline\hline
+\end{tabular}
+\end{table}
+

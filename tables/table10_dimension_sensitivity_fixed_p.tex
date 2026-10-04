@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Panel B: dimension-to-sample-size sensitivity with fixed $p=100$ and varying $n$. Trace bias is reported on the covariance-trace scale; covariance and precision errors are relative Frobenius-norm errors. The trace ratio is deterministic conditional on each simulated sample and equals $n/(n-1)$. Precision-error comparisons are specific to the fixed ridge-shrinkage parameter $\alpha=0.10$ and should not be interpreted as a universal precision-estimation result.}
+\label{tab:pn_sensitivity_fixed_p}
+\begin{tabular}{rrrlrrr}
+\hline\hline
+\textbf{$n$} & \textbf{$p$} & \textbf{$p/n$} & \textbf{Metric} & \textbf{$X$} & \textbf{$Y$} & \textbf{$Y-X$} \\
+\hline
+25 & 100 & 4.00 & Trace bias & -4.421 (0.146) & -0.439 (0.152) & 3.982 (0.006) \\
+ &  &  & Covariance error & 1.0543 (0.0017) & 1.0946 (0.0018) & 0.0403 (0.0001) \\
+ &  &  & Precision error & 1.8621 (0.0039) & 1.7621 (0.0037) & -0.1001 (0.0002) \\
+\hline
+50 & 100 & 2.00 & Trace bias & -1.993 (0.107) & 0.007 (0.109) & 2.000 (0.002) \\
+ &  &  & Covariance error & 0.7582 (0.0010) & 0.7716 (0.0010) & 0.0135 (0.0001) \\
+ &  &  & Precision error & 1.4216 (0.0022) & 1.3825 (0.0022) & -0.0391 (0.0001) \\
+\hline
+100 & 100 & 1.00 & Trace bias & -0.989 (0.078) & 0.011 (0.078) & 1.000 (0.001) \\
+ &  &  & Covariance error & 0.5422 (0.0005) & 0.5464 (0.0005) & 0.0042 (0.0000) \\
+ &  &  & Precision error & 0.8355 (0.0009) & 0.8241 (0.0009) & -0.0114 (0.0000) \\
+\hline
+200 & 100 & 0.50 & Trace bias & -0.465 (0.053) & 0.035 (0.054) & 0.500 (0.000) \\
+ &  &  & Covariance error & 0.3882 (0.0004) & 0.3893 (0.0004) & 0.0011 (0.0000) \\
+ &  &  & Precision error & 0.4547 (0.0003) & 0.4528 (0.0003) & -0.0019 (0.0000) \\
+\hline
+500 & 100 & 0.20 & Trace bias & -0.253 (0.034) & -0.053 (0.034) & 0.200 (0.000) \\
+ &  &  & Covariance error & 0.2537 (0.0002) & 0.2537 (0.0002) & -0.0000 (0.0000) \\
+ &  &  & Precision error & 0.3044 (0.0001) & 0.3050 (0.0001) & 0.0006 (0.0000) \\
+\hline\hline
+\end{tabular}
+\end{table}
+

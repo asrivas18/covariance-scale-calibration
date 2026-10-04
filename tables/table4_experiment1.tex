@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Experiment 1 results for $(n,p)=(30,100)$ and $\rho=0.7$, based on $M=1000$ paired Monte Carlo replications. Entries for standard and surrogate data are Monte Carlo means (MCSEs). The final column is the paired difference $Y-X$ (MCSE); negative values favor the surrogate for Frobenius-error metrics. For the precision-error metric, $\widehat{\Omega}=(\widehat{\Sigma}+10^{-4}\mathbf{I}_p)^{-1}$ was used for both members of each paired replication.}
+\label{tab:exp1_results}
+\begin{tabular}{llccc}
+\hline\hline
+\textbf{Estimator} & \textbf{Metric} & \textbf{Standard ($\mathbf{X}$)} & \textbf{Surrogate ($\mathbf{Y}$)} & \textbf{Difference ($Y-X$)} \\
+\hline
+Ledoit--Wolf & Frob. covariance error & 11.18 (0.01) & 11.20 (0.01) & 0.021 (0.001) \\
+Ledoit--Wolf & Frob. precision error & 23.07 (0.01) & 23.41 (0.01) & 0.336 (0.000) \\
+Ledoit--Wolf & Trace bias & -3.38 (0.13) & -0.05 (0.14) & 3.332 (0.005) \\
+\hline
+OAS & Frob. covariance error & 11.16 (0.01) & 11.16 (0.01) & 0.007 (0.001) \\
+OAS & Frob. precision error & 23.41 (0.01) & 23.74 (0.01) & 0.330 (0.000) \\
+OAS & Trace bias & -3.38 (0.13) & -0.05 (0.14) & 3.332 (0.005) \\
+\hline\hline
+\end{tabular}
+\end{table}
+

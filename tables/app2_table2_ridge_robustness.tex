@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Robustness of relative precision-estimation error to the ridge-shrinkage parameter $\alpha$. Entries are Monte Carlo means (MCSEs) over $M=1000$ paired replications. Negative $Y-X$ values favor the surrogate under relative precision Frobenius loss.}
+\label{tab:ridge_alpha_robustness}
+\begin{tabular}{rrrrccc}
+\hline\hline
+\textbf{$n$} & \textbf{$p$} & \textbf{$p/n$} & 
+\textbf{$\alpha$} & \textbf{$X$} & \textbf{$Y$} & 
+\textbf{$Y-X$} \\
+\hline
+100 & 25 & 0.25 & 0.05 & 0.4113 (0.0011) & 0.4063 (0.0010) & -0.0050 ($<0.00005$) \\
+100 & 25 & 0.25 & 0.10 & 0.3256 (0.0005) & 0.3268 (0.0004) & 0.0012 ($<0.00005$) \\
+100 & 25 & 0.25 & 0.20 & 0.4064 (0.0005) & 0.4111 (0.0005) & 0.0047 ($<0.00005$) \\
+100 & 100 & 1.00 & 0.05 & 1.8594 (0.0017) & 1.8355 (0.0017) & -0.0239 ($<0.00005$) \\
+100 & 100 & 1.00 & 0.10 & 0.8348 (0.0009) & 0.8234 (0.0009) & -0.0114 ($<0.00005$) \\
+100 & 100 & 1.00 & 0.20 & 0.4511 (0.0002) & 0.4516 (0.0002) & 0.0004 ($<0.00005$) \\
+100 & 500 & 5.00 & 0.05 & 4.3576 (0.0018) & 4.3064 (0.0017) & -0.0513 ($<0.00005$) \\
+100 & 500 & 5.00 & 0.10 & 1.8207 (0.0009) & 1.7961 (0.0008) & -0.0247 ($<0.00005$) \\
+100 & 500 & 5.00 & 0.20 & 0.6927 (0.0003) & 0.6845 (0.0003) & -0.0082 ($<0.00005$) \\
+\hline\hline
+\end{tabular}
+\end{table}

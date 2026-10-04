@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Experiment 3 predictive performance for $n=30$, $p=10$, $B=500$, $M=500$ paired Monte Carlo replications, and $n_{\mathrm{test}}=100$. Entries are Monte Carlo means with MCSEs in parentheses. Bootstrap intervals are quantiles of the distributions of bootstrap fitted predictions.}
+\label{tab:exp3results}
+\begin{tabular}{llccc}
+\hline\hline
+\textbf{Algorithm} & \textbf{Metric} & \textbf{Bootstrap: $X$} & \textbf{Bootstrap: $Y$} & \textbf{Post-hoc: $X$} \\
+\hline
+Bagged Ridge & Test MSE & 0.38 (0.00) & 0.38 (0.00) & -- \\
+ & 95\% interval width & 1.54 (0.01) & 1.55 (0.01) & 1.57 (0.01) \\
+ & 95\% empirical coverage & 75.8\\% (0.4\\%) & 76.0\\% (0.4\\%) & 76.8\\% (0.4\\%) \\
+\hline
+Bagged $K$-NN & Test MSE & 0.83 (0.01) & 0.83 (0.01) & -- \\
+ & 95\% interval width & 1.79 (0.01) & 1.79 (0.01) & 1.82 (0.01) \\
+ & 95\% empirical coverage & 65.1\\% (0.4\\%) & 65.1\\% (0.4\\%) & 65.9\\% (0.4\\%) \\
+\hline\hline
+\end{tabular}
+\end{table}
+
