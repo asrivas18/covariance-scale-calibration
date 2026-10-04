@@ -1,0 +1,6 @@
+"parameter","value"
+"master_seed","20260811"
+"rho","0.7"
+"M","1000"
+"alpha_grid","0.05, 0.1, 0.2"
+"design","(n=100, p=25); (n=100, p=100); (n=100, p=500)"

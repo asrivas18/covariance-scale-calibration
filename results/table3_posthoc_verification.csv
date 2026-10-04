@@ -1,0 +1,9 @@
+"quantity","max_abs_discrepancy","passed"
+"covariance",1.33226762955019e-15,TRUE
+"pca_eigenvalue",2.66453525910038e-15,TRUE
+"pca_bootstrap_draw",6.21724893790088e-15,TRUE
+"pca_percentile_endpoint",3.5527136788005e-15,TRUE
+"knn_neighbor_order",0,TRUE
+"kmeans_assignment",0,TRUE
+"kmeans_centroid_deviation",8.88178419700125e-16,TRUE
+"kmeans_centroid_variance",2.77555756156289e-17,TRUE

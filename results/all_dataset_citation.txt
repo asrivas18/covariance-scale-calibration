@@ -1,0 +1,19 @@
+To cite package ‘ALL’ in publications use:
+
+  Li X (2025). _ALL: A data package_. doi:10.18129/B9.bioc.ALL
+  <https://doi.org/10.18129/B9.bioc.ALL>, R package version 1.52.0,
+  <https://bioconductor.org/packages/ALL>.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {ALL: A data package},
+    author = {Xiaochun Li},
+    year = {2025},
+    note = {R package version 1.52.0},
+    url = {https://bioconductor.org/packages/ALL},
+    doi = {10.18129/B9.bioc.ALL},
+  }
+
+ATTENTION: This citation information has been auto-generated from the package
+DESCRIPTION file and may need manual editing, see ‘help("citation")’.
